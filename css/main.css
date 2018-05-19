@@ -615,9 +615,10 @@ button:focus {
   transition: all 0.3s ease 0s;
 }
 
+
 .item-boxes .icon {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   text-align: center;
   border: 1px solid #f1f1f1;
   display: inline-block;
@@ -627,6 +628,8 @@ button:focus {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
+
 
 .item-boxes .icon i {
   font-size: 26px;

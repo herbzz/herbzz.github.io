@@ -1,3 +1,4 @@
+
 (function($) {
   
   "use strict";
@@ -11,6 +12,10 @@
         }
     });
 
+    
+    
+    
+    
     /* 
    One Page Navigation & wow js
    ========================================================================== */
@@ -158,6 +163,50 @@
     verticalOffset: 40,
     responsive: true
   });
+
+
+/* form dropdown js
+  ========================================================*/  
+    
+function hide (elements) {
+  elements = elements.length ? elements : [elements];
+  for (var index = 0; index < elements.length; index++) {
+    elements[index].style.display = 'none';
+  }
+}
+
+  /* Hide jQuery
+  ========================================================*/  
+  
+    
+    $('#contact-person').show();
+    $('#contact-address').hide();
+    $('#contact-address-header').hide();
+    $('#contact-info').hide();
+    $('#contact-info-header').hide();
+    $('#contact-requirements').hide();
+    $('#contact-requirements-header').hide();
+    $('#contact-send').hide();
+    $('.person-complete').on('click', () => {
+        $('#contact-address').fadeIn(2000);
+        $('#contact-address-header').fadeIn(2000);
+        $('#contact-person').hide();
+    });
+        $('.address-complete').on('click', () => {
+        $('#contact-info').fadeIn(1000);
+        $('#contact-info-header').fadeIn(1000);
+        $('#contact-address').hide();
+    });
+        $('.info-complete').on('click', () => {
+        $('#contact-requirements').fadeIn();
+        $('#contact-requirements-header').fadeIn();
+        $('#contact-info').hide();
+    });
+        $('.requirements-complete').on('click', () => {
+        $('#contact-send').fadeIn();
+        $('#contact-requirements').hide();
+        $('.contact-requirements-header').hide();
+    });
 
 /* 
    Page Loader

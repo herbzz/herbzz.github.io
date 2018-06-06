@@ -31,7 +31,7 @@
 
         
            <!-- Header Section Start -->
-<header id="hero-area" data-stellar-background-ratio="0.5">
+<header id="video-promo" data-stellar-background-ratio="0.5">
          
     
     
@@ -56,6 +56,21 @@
                </ul>
            </div>
   </div>
+    
+            <!-- Mobile Menu Start -->
+        <ul class="mobile-menu">
+           <li>
+              <a class="page-scroll" href="../index.html">Startseite</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#team">Über Uns</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#contact">Kontakt</a>
+            </li>
+        </ul>
+        <!-- Mobile Menu End -->
+
 </nav>
 </header> 
     <!-- Navbar End -->  
@@ -73,56 +88,81 @@
         
         
         
-   <section class="video-promo section">
+   <section class="video-promo section" class="video-popup wow">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
               <div class="video-promo-content text-center">
-
-                  
-                  
-                  
                 <h2>Kontaktinformation</h2>
-        <div>
-            <h3>Name</h3>
+        
+                  <h3>PERSON</h3>
+                  <div id="contact-person">
             <div class="col-lg-6 col-sm-6 col-xs-12">
               <div class="contact-block">
                 <form id="contactForm">
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Nachname" required data-error="Bitte Nachname eingeben">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Nachname" required data-error="Bitte Nachname eingeben" align="center">
                         <div class="help-block with-errors"></div>
                       </div>                                 
                     </div>
                     <div class="col-md-12">
                       <div class="form-group">
-                        <input type="text" placeholder="Vorname" id="email" class="form-control" name="name" required data-error="Bitte Vorname eingeben">
+                        <input type="text" placeholder="Vorname" id="name" class="form-control" name="name" required data-error="Bitte Vorname eingeben">
                         <div class="help-block with-errors"></div>
                       </div> 
                     </div> 
-                  </div> 
-                </form>
+                      
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <h3>Geschlecht</h3>
+                            <label class="container">Männlich
+                <input type="radio" name="Gender">
+                <span class="checkmark"></span>
+                            </label>
+                          <label class="container">Weiblich
+                <input type="radio" name="Gender">
+                <span class="checkmark"></span>
+                            </label>
+                    </div>
+                  </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+              <div class="video-promo-content text-center">
+                    <div class="col-md-12">
+                        <h3>Geburtsdatum</h3>
+        <input type="text" id="datepicker" placeholder="Geburtsdatum">
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+                              <div class="col-lg-12 col-sm-12 col-xs-12">
+                                  <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Anzahl betreffender Personen auswählen <i class="fa fa-caret-down"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+      <a>Single</a>
+      <a>Paar</a>
+      <a>Ehepaar</a>
+      <a>Familie</a>
+      <a>Familie > 3 Personen</a>
+            </div>          
         </div>
+                    </div>
+                      
+            <a class="btn btn-common wow fadeInUp page-scroll person-complete"  data-wow-duration="1000ms" data-wow-delay="400ms">Weiter zur Adresse</a>
+          </div> 
+        </form>
+      </div>
+    </div>
+</div>
                   
-         <div>
-            <h3>Geschlecht</h3>
-            <label class="container">Männlich
-                <input type="radio" name="Gender">
-                <span class="checkmark"></span>
-            </label>
-
-            <label class="container">Weiblich
-                <input type="radio" name="Gender">
-                <span class="checkmark"></span>
-            </label>
+        <div id="contact-address-header">
+           <h3>ADRESSE</h3>
         </div>
-             
-                 
-        <div>
-            <h3>Adresse</h3>
+        <div id="contact-address">
             <div class="col-lg-6 col-sm-6 col-xs-12">
               <div class="contact-block">
                 <form id="contactForm">
@@ -137,33 +177,18 @@
             <input type="text" class="form-control" id="name" name="name" placeholder="PLZ, Ort" required data-error="Please enter your name">
                         </div>
                       </div>
+                      <a class="btn btn-common wow fadeInUp page-scroll address-complete"  data-wow-duration="1000ms" data-wow-delay="400ms">Weiter zu Kontakt</a>
                     </div>
                   </form>
                 </div>
             </div>
-                 </div>   
+         </div>   
          
-                  <div class="row">
-                    <div class="col-md-12">
-        <input type="text" id="datepicker" placeholder="Geburtsdatum">
-</div>
-                  </div>
-
-        
-            <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Anzahl betreffender Personen auswählen <i class="fa fa-caret-down"></i></button>
-  <div id="myDropdown" class="dropdown-content">
-      <a>Single</a>
-      <a>Paar</a>
-      <a>Ehepaar</a>
-      <a>Familie</a>
-      <a>Familie > 3 Personen</a>
-  </div>          
+        <div id="contact-info-header">
+         <h3>KONTAKT</h3>
         </div>
-
-         
-
-    <h3>Angaben zur Person</h3>
+    <div id="contact-info">
+    
                 
             <div class="col-lg-6 col-sm-6 col-xs-12">
               <div class="contact-block">
@@ -179,14 +204,18 @@
                             <input type="text" class="form-control" id="name" name="name" placeholder="E-Mail" required data-error="Please enter your name">
                         </div>
                       </div>
+                      <a class="btn btn-common wow fadeInUp page-scroll info-complete"  data-wow-duration="1000ms" data-wow-delay="400ms">Weitere Informationen</a>
                     </div>
                   </form>
                </div>
               </div>
-
-
-        <h3>Weitere Informationen</h3>
-        
+</div>
+                  
+                <div id="contact-requirements-header">
+                   <h3>WEITERE INFORMATIONEN</h3>
+                </div>
+                  
+                  <div id="contact-requirements">     
 <div class="grid">
 
     <div class="head a">Meine Bedürfnisse sind:</div> 
@@ -207,17 +236,67 @@
       <button class="box n">Unfreundliche Angestellte</button>
 
         </div>
-  
-<div class="submit-button text-center">
+                      <a class="btn btn-common wow fadeInUp page-scroll requirements-complete"  data-wow-duration="1000ms" data-wow-delay="400ms">Überprüfe deine Eingaben</a>
+  </div>
+                  <div id="contact-send">
+<div class="submit-button text-center wow fadeInUp">
                         <button class="btn btn-common" id="submit" type="submit">SENDEN</button>
                         <div id="msgSubmit" class="h3 text-center hidden"></div> 
                         <div class="clearfix"></div> 
                       </div>
          </div>
+                  </div>
             </div>
           </div>
        </div>
         </section>
+        
+        
+            <!-- Footer Section Start -->
+    <footer>          
+      <div class="container">
+        <div class="row">
+          <!-- Footer Links -->
+          <div class="col-lg-6 col-sm-6 col-xs-12">
+            <ul class="footer-links">
+              <li>
+                <a href="#">Homepage</a>
+              </li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#team">About Us</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-sm-6 col-xs-12">
+            <div class="copyright">
+              <p>All copyrights reserved &copy; 2018 - Designed & Developed by <a rel="nofollow" href="https://uideck.com">H&H Designs</a></p>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End --> 
+        
+        
+            <!-- Go To Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="lnr lnr-arrow-up"></i>
+    </a>
+    
+    <div id="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>   
+        
+        
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script>
       $( function() {
